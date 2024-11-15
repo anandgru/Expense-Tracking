@@ -1,0 +1,161 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  color: #4a90e2;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  background-color: #b3d4ff;
+  cursor: not-allowed;
+}
+
+/* Style for the Expense List */
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+/* Styling for the expense name */
+ul li .expense-name {
+  /* Allows the name to take up the remaining space */
+  font-weight: 50;
+}
+
+/* Styling for the expense amount */
+ul li .expense-amount {
+  font-weight: bold;
+  color: #e94e77; /* Pinkish color for expense amount */
+  font-size: 24px;
+}
+
+/* Styling for the expense category */
+ul li .expense-category {
+  font-style: italic;
+  color: #8b8b8b; /* Gray color for category */
+}
+
+/* Styling for the expense date */
+ul li .expense-date {
+  font-size: 12px;
+  color: #aaa; /* Light gray color for date */
+}
+
+/* Button container styles (Edit/Delete buttons) */
+ul li .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+ul li .buttons button {
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Edit button styles */
+ul li .buttons .edit {
+  background-color: #4a90e2;
+  color: white;
+}
+
+ul li .buttons .edit:hover {
+  background-color: #357abd;
+}
+
+/* Delete button styles */
+ul li .buttons .delete {
+  background-color: #e94e77;
+  color: white;
+}
+
+ul li .buttons .delete:hover {
+  background-color: #d43f56;
+}
+
+/* Button active effect */
+ul li .buttons button:active {
+  transform: scale(0.98);
+}
+
+/* Add some spacing at the bottom of the list */
+ul li:last-child {
+  margin-bottom: 0;
+}
